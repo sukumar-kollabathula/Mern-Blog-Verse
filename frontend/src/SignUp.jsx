@@ -10,7 +10,7 @@ import { CircleUserRound } from 'lucide-react';
 import { Eye } from 'lucide-react';
 import { EyeOff } from 'lucide-react';
 const SignUp = () => {
-    const [errors, setErorrs] = useState({
+    const [errors, setErrors] = useState({
         fullname: "",
         email: "",
         password: "",
@@ -40,7 +40,7 @@ const SignUp = () => {
             newErrors.confirmpassword = "Password not matched"
         }
         if (Object.keys(newErrors).length > 0) {
-            setErorrs(newErrors);
+            setErrors(newErrors);
         } else (
             setSuccess("your account has been created successfully"),
             setFormData({
@@ -107,7 +107,7 @@ return (
         <NavBar />
         <h1 className="text-blue-700 font-bold text-lg  ">Join BlogVerse</h1>
         <p className="mt-10">Create your account and <br></br>start your Blogging Jouirney</p>
-        <form onSubmit={handleSubmit} className="flex flex-col border-1 border-gray-400 w-1/3 p-5 justify-center items-center gap-5 rounded-xl">
+        <form onSubmit={handleSubmit} className="flex flex-col border-1 border-gray-400 lg:w-1/3 p-5 justify-center items-center gap-5 rounded-xl mb-10">
             <div className="w-[90%]">
                 <div className="relative">
                     <p className="text-md text-gray-600 font-semibold">Full Name</p>

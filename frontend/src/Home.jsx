@@ -62,11 +62,11 @@ function Home() {
     return (
         <div className="min-h-screen flex flex-col items-center pt-5 bg-gray-50">
             <NavBar/>
-            <p className="text-4xl font-bold">Welcome back, Dev Astra</p>
-            <p className="text-lg text-gray-500 mt-4"> Discover amazing stories, insights, and ideas from our community of writers.</p>
+            <p className="text-2xl mt-2 md:text-4xl md:mt-3 font-bold ">Welcome back, Dev Astra</p>
+            <p className="text-lg ml-5 text-gray-500 mt-4"> Discover amazing stories, insights, and ideas from our community of writers.</p>
             <div className=" flex gap-10 justify-around mt-5 ">
-                <button className="px-10 py-4 cursor-pointer bg-blue-700 hover:bg-blue-900 shadow-md text-white rounded-md">Write a New Post</button>
-                <button className="px-10 py-4 cursor-pointer bg-gray-200 hover:bg-gray-300 text-gray-800 rounded-md" >View My Posts</button>
+                <button className="px-5 py-2 md:px-10 md:py-4 cursor-pointer bg-blue-700 hover:bg-blue-900 shadow-md text-white rounded-md">Write a New Post</button>
+                <button className="px-5 py-2 md:px-10 md:py-4 cursor-pointer bg-gray-200 hover:bg-gray-300 text-gray-800 rounded-md" >View My Posts</button>
             </div>
             <div className="mt-5 flex gap-10 flex-wrap justify-center w-full rounded-lg shadow-lg pb-5">
                 {
